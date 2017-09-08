@@ -1,0 +1,272 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70EC99F8-FB12-4CB2-A453-A0057A04BF05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JulMar.Smpp</RootNamespace>
+    <AssemblyName>Smpp.NET</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Smpp.NET.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Smpp.NET.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SocketBase.NET, Version=1.1.0.4, Culture=neutral, PublicKeyToken=9d2a74c91e4ffccc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SocketBase.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Elements\additional_status_info_text.cs" />
+    <Compile Include="Elements\address.cs" />
+    <Compile Include="Elements\address_buffer.cs" />
+    <Compile Include="Elements\address_collection.cs" />
+    <Compile Include="Elements\address_range.cs" />
+    <Compile Include="Elements\alert_on_message_delivery.cs" />
+    <Compile Include="Elements\billing_identification.cs" />
+    <Compile Include="Elements\broadcast_area_identifier.cs" />
+    <Compile Include="Elements\broadcast_area_success.cs" />
+    <Compile Include="Elements\broadcast_channel_indicator.cs" />
+    <Compile Include="Elements\broadcast_content_type.cs" />
+    <Compile Include="Elements\broadcast_content_type_info.cs" />
+    <Compile Include="Elements\broadcast_end_time.cs" />
+    <Compile Include="Elements\broadcast_error_status.cs" />
+    <Compile Include="Elements\broadcast_frequency_interval.cs" />
+    <Compile Include="Elements\broadcast_message_class.cs" />
+    <Compile Include="Elements\broadcast_rep_num.cs" />
+    <Compile Include="Elements\broadcast_service_group.cs" />
+    <Compile Include="Elements\callback_num.cs" />
+    <Compile Include="Elements\callback_num_atag.cs" />
+    <Compile Include="Elements\callback_num_pres_ind.cs" />
+    <Compile Include="Elements\congestion_state.cs" />
+    <Compile Include="Elements\data_coding.cs" />
+    <Compile Include="Elements\delivery_failure_reason.cs" />
+    <Compile Include="Elements\destination_port.cs" />
+    <Compile Include="Elements\dest_addr_np_country.cs" />
+    <Compile Include="Elements\dest_addr_np_information.cs" />
+    <Compile Include="Elements\dest_addr_np_resolution.cs" />
+    <Compile Include="Elements\dest_addr_subunit.cs" />
+    <Compile Include="Elements\dest_bearer_type.cs" />
+    <Compile Include="Elements\dest_flag.cs" />
+    <Compile Include="Elements\dest_network_id.cs" />
+    <Compile Include="Elements\dest_network_type.cs" />
+    <Compile Include="Elements\dest_node_id.cs" />
+    <Compile Include="Elements\dest_subaddress.cs" />
+    <Compile Include="Elements\dest_telematics_id.cs" />
+    <Compile Include="Elements\display_time.cs" />
+    <Compile Include="Elements\dl_member_details.cs" />
+    <Compile Include="Elements\dl_name.cs" />
+    <Compile Include="Elements\dpf_result.cs" />
+    <Compile Include="Elements\Elements.cs" />
+    <Compile Include="Elements\esm_class.cs" />
+    <Compile Include="Elements\final_date.cs" />
+    <Compile Include="Elements\interface_version.cs" />
+    <Compile Include="Elements\its_reply_type.cs" />
+    <Compile Include="Elements\its_session_info.cs" />
+    <Compile Include="Elements\language_indicator.cs" />
+    <Compile Include="Elements\message_id.cs" />
+    <Compile Include="Elements\message_payload.cs" />
+    <Compile Include="Elements\message_state.cs" />
+    <Compile Include="Elements\more_messages_to_send.cs" />
+    <Compile Include="Elements\ms_availability_status.cs" />
+    <Compile Include="Elements\ms_msg_wait_facilities.cs" />
+    <Compile Include="Elements\ms_validity.cs" />
+    <Compile Include="Elements\multi_address.cs" />
+    <Compile Include="Elements\network_error_code.cs" />
+    <Compile Include="Elements\npi.cs" />
+    <Compile Include="Elements\number_of_messages.cs" />
+    <Compile Include="Elements\password.cs" />
+    <Compile Include="Elements\payload_type.cs" />
+    <Compile Include="Elements\priority_flag.cs" />
+    <Compile Include="Elements\privacy_indicator.cs" />
+    <Compile Include="Elements\protocol_id.cs" />
+    <Compile Include="Elements\qos_time_to_live.cs" />
+    <Compile Include="Elements\receipted_message_id.cs" />
+    <Compile Include="Elements\registered_delivery.cs" />
+    <Compile Include="Elements\replace_if_present.cs" />
+    <Compile Include="Elements\sar_msg_ref_num.cs" />
+    <Compile Include="Elements\sar_segment_seqnum.cs" />
+    <Compile Include="Elements\sar_total_segments.cs" />
+    <Compile Include="Elements\schedule_delivery_time.cs" />
+    <Compile Include="Elements\sc_interface_version.cs" />
+    <Compile Include="Elements\service_type.cs" />
+    <Compile Include="Elements\set_dpf.cs" />
+    <Compile Include="Elements\short_message.cs" />
+    <Compile Include="Elements\smsc_delivery_receipt.cs" />
+    <Compile Include="Elements\smsc_provisioning_record.cs" />
+    <Compile Include="Elements\sms_signal.cs" />
+    <Compile Include="Elements\sm_default_msg_id.cs" />
+    <Compile Include="Elements\source_addr_subunit.cs" />
+    <Compile Include="Elements\source_bearer_type.cs" />
+    <Compile Include="Elements\source_network_id.cs" />
+    <Compile Include="Elements\source_network_type.cs" />
+    <Compile Include="Elements\source_node_id.cs" />
+    <Compile Include="Elements\source_port.cs" />
+    <Compile Include="Elements\source_subaddress.cs" />
+    <Compile Include="Elements\source_telematics_id.cs" />
+    <Compile Include="Elements\system_id.cs" />
+    <Compile Include="Elements\system_type.cs" />
+    <Compile Include="Elements\ton.cs" />
+    <Compile Include="Elements\unsuccess_sme.cs" />
+    <Compile Include="Elements\user_message_reference.cs" />
+    <Compile Include="Elements\user_response.code.cs" />
+    <Compile Include="Elements\ussd_service_op.cs" />
+    <Compile Include="Elements\validity_period.cs" />
+    <Compile Include="Esme\EsmeSession.cs" />
+    <Compile Include="Esme\State\EsmeBoundRXSessionState.cs" />
+    <Compile Include="Esme\State\EsmeBoundTRXSessionState.cs" />
+    <Compile Include="Esme\State\EsmeDisconnectedSessionState.cs" />
+    <Compile Include="Esme\State\EsmeConnectedSessionState.cs" />
+    <Compile Include="Esme\State\EsmeBoundTXSessionState.cs" />
+    <Compile Include="Esme\State\EsmeBoundSessionState.cs" />
+    <Compile Include="SmppEventArgs.cs" />
+    <Compile Include="Pdu\add_dl.cs" />
+    <Compile Include="Pdu\add_dl_resp.cs" />
+    <Compile Include="Pdu\add_sub.cs" />
+    <Compile Include="Pdu\add_sub_resp.cs" />
+    <Compile Include="Pdu\alert_notification.cs" />
+    <Compile Include="Pdu\bind_receiver.cs" />
+    <Compile Include="Pdu\bind_receiver_resp.cs" />
+    <Compile Include="Pdu\bind_transceiver.cs" />
+    <Compile Include="Pdu\bind_transceiver_resp.cs" />
+    <Compile Include="Pdu\bind_transmitter.cs" />
+    <Compile Include="Pdu\bind_transmitter_resp.cs" />
+    <Compile Include="Pdu\broadcast_sm.cs" />
+    <Compile Include="Pdu\broadcast_sm_resp.cs" />
+    <Compile Include="Pdu\cancel_broadcast_sm.cs" />
+    <Compile Include="Pdu\cancel_broadcast_sm_resp.cs" />
+    <Compile Include="Pdu\cancel_sm.cs" />
+    <Compile Include="Pdu\cancel_sm_resp.cs" />
+    <Compile Include="Pdu\data_sm.cs" />
+    <Compile Include="Pdu\data_sm_resp.cs" />
+    <Compile Include="Pdu\deliver_sm.cs" />
+    <Compile Include="Pdu\deliver_sm_resp.cs" />
+    <Compile Include="Pdu\del_dl.cs" />
+    <Compile Include="Pdu\del_dl_resp.cs" />
+    <Compile Include="Pdu\del_sub.cs" />
+    <Compile Include="Pdu\del_sub_resp.cs" />
+    <Compile Include="Pdu\enquire_link.cs" />
+    <Compile Include="Pdu\enquire_link_resp.cs" />
+    <Compile Include="Pdu\enquire_sub.cs" />
+    <Compile Include="Pdu\enquire_sub_resp.cs" />
+    <Compile Include="Pdu\generic_nack.cs" />
+    <Compile Include="Pdu\list_dls.cs" />
+    <Compile Include="Pdu\list_dls_resp.cs" />
+    <Compile Include="Pdu\mod_dl.cs" />
+    <Compile Include="Pdu\mod_dl_resp.cs" />
+    <Compile Include="Pdu\mod_sub.cs" />
+    <Compile Include="Pdu\mod_sub_resp.cs" />
+    <Compile Include="Pdu\outbind.cs" />
+    <Compile Include="Pdu\PduHandler.cs" />
+    <Compile Include="Pdu\SmppPdu.cs" />
+    <Compile Include="Pdu\PduFactory.cs" />
+    <Compile Include="Pdu\query_broadcast_sm.cs" />
+    <Compile Include="Pdu\query_broadcast_sm_resp.cs" />
+    <Compile Include="Pdu\query_sm.cs" />
+    <Compile Include="Pdu\query_sm_resp.cs" />
+    <Compile Include="Pdu\replace_sm.cs" />
+    <Compile Include="Pdu\replace_sm_resp.cs" />
+    <Compile Include="Pdu\SmppRequest.cs" />
+    <Compile Include="Pdu\SmppResponse.cs" />
+    <Compile Include="Pdu\SmppSubmitRequest.cs" />
+    <Compile Include="Pdu\submit_sm.cs" />
+    <Compile Include="Pdu\submit_sm_multi.cs" />
+    <Compile Include="Pdu\submit_sm_multi_resp.cs" />
+    <Compile Include="Pdu\submit_sm_resp.cs" />
+    <Compile Include="Pdu\unbind.cs" />
+    <Compile Include="Pdu\unbind_resp.cs" />
+    <Compile Include="Pdu\view_dl.cs" />
+    <Compile Include="Pdu\view_dl_resp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmppSession.cs" />
+    <Compile Include="Smsc\SmscServer.cs" />
+    <Compile Include="Smsc\SmscSession.cs" />
+    <Compile Include="SmppSessionState.cs" />
+    <Compile Include="Smsc\State\SmscBoundSessionState.cs" />
+    <Compile Include="Smsc\State\SmscBoundRXSessionState.cs" />
+    <Compile Include="Smsc\State\SmscBoundTRXSessionState.cs" />
+    <Compile Include="Smsc\State\SmscBoundTXSessionState.cs" />
+    <Compile Include="Smsc\State\SmscOpenSessionState.cs" />
+    <Compile Include="Utility\AsynchSupport.cs" />
+    <Compile Include="Utility\Exceptions.cs" />
+    <Compile Include="Utility\SmppByteStream.cs" />
+    <Compile Include="Utility\Sockets.cs" />
+    <Compile Include="Utility\TLV.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

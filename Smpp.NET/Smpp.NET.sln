@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smpp.NET", "Smpp.NET.csproj", "{70EC99F8-FB12-4CB2-A453-A0057A04BF05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEsme", "..\TestEsme\TestEsme.csproj", "{2858A4A5-5398-4857-9B4D-A4C56416E4AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EsmeGui", "..\EsmeGui\EsmeGui.csproj", "{C06BF6C8-C7AC-4DB6-BDC6-60AFE0573B47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70EC99F8-FB12-4CB2-A453-A0057A04BF05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70EC99F8-FB12-4CB2-A453-A0057A04BF05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70EC99F8-FB12-4CB2-A453-A0057A04BF05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70EC99F8-FB12-4CB2-A453-A0057A04BF05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2858A4A5-5398-4857-9B4D-A4C56416E4AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2858A4A5-5398-4857-9B4D-A4C56416E4AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2858A4A5-5398-4857-9B4D-A4C56416E4AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2858A4A5-5398-4857-9B4D-A4C56416E4AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06BF6C8-C7AC-4DB6-BDC6-60AFE0573B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06BF6C8-C7AC-4DB6-BDC6-60AFE0573B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06BF6C8-C7AC-4DB6-BDC6-60AFE0573B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06BF6C8-C7AC-4DB6-BDC6-60AFE0573B47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
