@@ -11,7 +11,6 @@ using JulMar.Smpp;
 using JulMar.Smpp.Pdu;
 using JulMar.Smpp.Elements;
 using System.Configuration;
-using JulMar.SocketBase;
 using System.Timers;
 using JulMar.Smpp.Utility;
 

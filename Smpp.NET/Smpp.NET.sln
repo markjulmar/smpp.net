@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smpp.NET", "Smpp.NET.csproj", "{70EC99F8-FB12-4CB2-A453-A0057A04BF05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEsme", "..\TestEsme\TestEsme.csproj", "{2858A4A5-5398-4857-9B4D-A4C56416E4AA}"
@@ -28,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E7647E1-09D7-483E-A39A-05C3A89264F6}
 	EndGlobalSection
 EndGlobal
